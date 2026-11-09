@@ -234,6 +234,10 @@ footer .gm{filter:var(--fg)}
 .dmx:hover{background:var(--ink);color:var(--bg)}
 .dmn{display:flex;gap:8px;margin:26px 0 4px}.dmn button{border:1px solid var(--line);background:none;border-radius:99px;padding:8px 16px;font-size:14px;color:var(--ink)}.dmn button:hover:not(:disabled){background:var(--ink);color:var(--bg)}.dmn button:disabled{opacity:.35;cursor:default}
 @media(max-width:860px){.dmp{grid-template-columns:1fr;overflow:auto;align-items:start;gap:22px;padding-top:80px}.dmi{width:min(70vw,360px);justify-self:center}.dmt{max-height:none;overflow:visible}}
+/* lienzo: transición de color y bordes difuminados */
+#archivo{background:linear-gradient(to bottom,var(--bg) 0%,color-mix(in srgb,var(--ink) 15%,var(--bg)) 50%,var(--bg) 100%)}
+#cv{inset:0;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 82%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 82%,transparent 100%)}
+#cvh{z-index:2}
 </style>
 </head>
 <body>
